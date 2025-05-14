@@ -10,25 +10,25 @@ form.addEventListener("submit", (e) => {
 });
 
 let formValidation = () => {
-    if (input.value === "") {
-        msg.innerHTML = "Post cannot be blank.";
-        console.log("Failure");
-    } else {
-        msg.innerHTML = "";
-        console.log("Success");
-        acceptData();
-    }
+  if (input.value === "") {
+    msg.innerHTML = "Post cannot be blank.";
+    console.log("Failure");
+  } else {
+    msg.innerHTML = "";
+    console.log("Success");
+    acceptData();
+  }
 };
 
 let data = {};
 let acceptData = () => {
-    data["text"] = input.value;
-    console.log(data);
-    createPost();
+  data["text"] = input.value;
+  console.log(data);
+  createPost();
 };
 
 let createPost = () => {
-    posts.innerHTML += `
+  posts.innerHTML += `
         <div>
             <p>${data.text}</p>
             <span class="options">
@@ -37,14 +37,14 @@ let createPost = () => {
             </span>
         </div>
     `;
-    input.value = "";
-}
+  input.value = "";
+};
 
 let deletePost = (e) => {
-    e.parentElement.parentElement.remove();
-}
+  e.parentElement.parentElement.remove();
+};
 
 let editPost = (e) => {
-    input.value = e.parentElement.previousElementSibling.innerHTML;
-    e.parentElement.parentElement.remove();
-}
+  input.value = e.parentElement.previousElementSibling.innerHTML;
+  e.parentElement.parentElement.remove();
+};
