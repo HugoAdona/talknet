@@ -1,0 +1,71 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    color-scheme: dark;
+}
+
+body {
+    margin: 0 40px;
+}
+
+.container {
+    display: flex;
+    gap: 50px;
+}
+
+textarea {
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px 0 15px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    font-weight: bold;
+}
+
+.line {
+    width: 200px;
+    opacity: 0.2;
+    border-bottom: 1px solid white;
+}
+
+#posts {
+    width: 400px;
+}
+
+#posts div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.options {
+    display: flex;
+    gap: 15px;
+}
+
+#msg {
+    margin: 5px 0;
+    color: red;
+}
+
+i {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+i:hover {
+    font-size: 1.1rem;
+}
